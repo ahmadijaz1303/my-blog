@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <style>
+   body {
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    line-height: 1.5;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header h1, header p {
+    text-align: center;
+    margin: 0;
+    padding-top: 36px;
+}
+
+header p span {
+    color: aliceblue;
+    background-color: black;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center content */
+    padding: 20px; /* Add padding around the main area */
+}
+
+.container, .container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%; /* Full width on small screens */
+}
+
+.box {
+    background-color: white;
+    margin: 10px;
+    box-shadow: 5px 5px 10px 2px rgb(145, 144, 144);
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.btn {
+    margin: 10px;
+    padding: 15px 30px;
+    border: 1px solid rgb(204, 203, 203);
+    cursor: pointer;
+    display: block;
+    width: 100%; /* Full width on small screens */
+}
+
+.box h2, .box h4, .box p {
+    padding: 15px 0;
+}
+
+.container2 {
+    width: 100%; /* Full width on small screens */
+}
+
+.box2 {
+    background-color: white;
+    margin: 10px;
+    box-shadow: 5px 5px 10px rgb(145, 144, 144);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.imgs {
+    width: 50px;
+    height: auto;
+    margin-right: 16px;
+}
+
+.box2 ul li {
+    font: 15px sans-serif;
+    padding: 16px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.h4 {
+    font-weight: 400;
+    margin: 10px 0px;
+    font-size: 20px;
+}
+
+.popular {
+    font: 15px sans-serif;
+    padding: 8px 16px;
+}
+
+.spn {
+    color: aliceblue;
+    background-color: black;
+    padding: 4px 7px;
+    margin: 5px;
+}
+
+.spn1 {
+    background-color: rgb(224, 222, 222);
+    margin: 5px;
+    display: inline-block;
+    padding: 4px 8px;
+    text-align: center;
+}
+
+#box3 {
+    padding: 20px;
+}
+
+.footer {
+    background-color: rgb(150, 147, 147);
+    margin-top: 25px;
+    padding: 20px;
+    text-align: center;
+}
+
+.btns2 {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.btn1 {
+    border: none;
+    cursor: pointer;
+    color: aliceblue;
+    background-color: black;
+    margin: 1px;
+    padding: 15px 30px;
+    font-size: 16px;
+}
+
+/* Medium Screens (Tablets, smaller laptops) */
+@media (min-width: 768px) {
+    .main {
+        flex-direction: row; /* Arrange containers side by side */
+    }
+
+    .container {
+        width: 65%; /* Adjust width for medium screens */
+    }
+
+    .container2 {
+        width: 30%; /* Adjust width for medium screens */
+    }
+
+    .btn {
+        width: auto; /* Auto width on larger screens */
+    }
+}
+
+/* Large Screens (Desktops) */
+@media (min-width: 1024px) {
+    .container {
+        width: 70%; /* Further adjust width for large screens */
+    }
+
+    .container2 {
+        width: 25%; /* Further adjust width for large screens */
+    }
+}
+
+        
+    </style>
+</head>
+<body>
+    <header>
+    <h1>MY BLOG</h1>
+        <p>Welcome to the blog of &nbsp;<span class="span"> Ahmad</span><p>
+        </header>
+    <div class="main">
+    <div class="container">
+        <div class="box">
+            <img src="task3.1.jpg" alt="" class="img">
+            <h2> Mountain</h2>
+            <h4> Description, July 19,2024</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni nobis eligendi voluptatibus alias magnam nulla odit iste minima. Quam officia expedita cum voluptas enim quaerat alias repellat dolorum autem?  Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti labore obcaecati architecto minima mollitia explicabo magni ipsam laudantium ex repellendus quas unde delectus debitis, quam accusantium eveniet libero quaerat? Ipsam!
+            </p>
+            <button class="btn">READ MORE</button> 
+
+        </div>
+        <div class="box">
+            <img src="task 3.2.jpg" alt="" class="img">
+            <h2>Blog Entry</h2>
+            <h4>Description , July 19,2024</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum modi, facere debitis praesentium ad provident unde cumque ullam. Quas nostrum repudiandae mollitia facilis, deleniti quia id ad veniam nemo maxime!</p>
+            <button class="btn">READ MORE </button>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="box2">
+            <img src="task 3.3.jpg" alt="" class="img">
+            <h2>My Name</h2>
+            <h4>Description , July 19,2024</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum modi, facere debitis praesentium ad provident unde cumque ullam. Quas nostrum repudiandae mollitia facilis, deleniti quia id ad veniam nemo maxime!</p>
+        </div>
+        <div class="box2">
+            <div class="popular">
+                <h4 class="h4">Popular Posts</h4>
+            </div>
+            <ul>
+                <li><img src="task 3.4.jpg" alt="Image" class="imgs" style="width:50px">
+                <div class="box4"><span style="font-weight: bolder;">Lorem</span><br><span>Sed mattis nunc</span></div></li>
+                <li><img src="task 3.5.jpg" alt="Image" class="imgs" style="width:50px"><div class="box4"><span style="font-weight: bolder;">Ispum</span><br><span>Sed mattis nunc</span></div></li>
+                <li><img src="task 3.6.jpg" alt="Image" class="imgs" style="width:50px"><div class="box4"><span style="font-weight: bolder;">Dorum</span><br><span>Sed mattis nunc</span></div></li>
+                <li><img src="task 3.7.jpg" alt="Image" class="imgs" style="width:50px"><div class="box4"><span style="font-weight: bolder;">Mingsum</span><br><span>Sed mattis nunc</span></div></li>
+            </ul>
+        </div>
+        <div class="box2" id="box3">
+            <div><h4>Tags</h4></div>
+            <div class="spans">
+                <span class="spn">Travel</span><span class="spn1">New york</span><span class="spn1">London</span><span class="spn1">Lahore</span><span class="spn1">Norway</span><span class="spn1">ideas</span><span class="spn1">html</span><span class="spn1">java</span><span class="spn1">baby</span><span class="spn1">sports</span><span class="spn1">hello</span><span class="spn1">blogs</span><span class="spn1">games</span><span class="spn1">news</span>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+   <div class="btns2"> <button class="btn1">Previous</button>
+    <button class="btn1">Next</button>
+</div>
+
+</footer>
+</body>
+</html>
